@@ -14,7 +14,7 @@ namespace EQRS_Sys
     public partial class AddAccount : Form
     {
 
-        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-2H9N6CS;Initial Catalog=EQRS_4H;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=MEW-PC;Initial Catalog=EQRS;Integrated Security=True");
 
         public AddAccount()
         {
@@ -31,8 +31,8 @@ namespace EQRS_Sys
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into ADMIN(FirstName, LastName, Age, Birthday, Address, ContactNumber,Email, Username, Password)"
-                + "values('"+textBox1.Text+"','"+textBox2.Text+"','"+textBox3.Text+"','"+textBox4.Text+"','"+textBox5.Text+"','"+textBox6.Text+"','"+textBox7.Text+"','"+textBox8.Text+"','"+textBox9.Text+"') ";
+            cmd.CommandText = "insert into ADMIN(ID, FirstName, LastName, Age, Birthday, Address, ContactNumber,Email, Username, Password)"
+                + "values('"+textBox10.Text+"','"+textBox1.Text+"','"+textBox2.Text+"','"+textBox3.Text+"','"+textBox4.Text+"','"+textBox5.Text+"','"+textBox6.Text+"','"+textBox7.Text+"','"+textBox8.Text+"','"+textBox9.Text+"') ";
             cmd.ExecuteNonQuery();
             conn.Close();
 

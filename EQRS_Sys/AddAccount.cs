@@ -38,7 +38,7 @@ namespace EQRS_Sys
 
             MessageBox.Show("Account saved successfully!");
         }
-
+        //fadsfastessssssssssssssssss
         private void AddAccount_Load(object sender, EventArgs e)
         {
 

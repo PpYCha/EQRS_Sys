@@ -27,7 +27,7 @@ namespace EQRS_Sys
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=MEW-PC;Initial Catalog=EQRS;Integrated Security=True");
+            /*SqlConnection conn = new SqlConnection("Data Source=MEW-PC;Initial Catalog=EQRS;Integrated Security=True");
             string query = "SELECT * FROM dbo.Admin";
             SqlCommand command = new SqlCommand(query, conn);
             conn.Open();
@@ -42,7 +42,7 @@ namespace EQRS_Sys
                 
             }
 
-            string FName = reader.GetString(1);
+          string FName = reader.GetString(1);
             string LName = reader.GetString(2);
             int age = reader.GetInt32(3);
             DateTime birthDate = reader.GetDateTime(4);
@@ -59,7 +59,7 @@ namespace EQRS_Sys
             textBox6.Text = contNum.ToString();
             textBox7.Text = userName;
             textBox8.Text = passWord;
-
+            */
         }
     }
 }
